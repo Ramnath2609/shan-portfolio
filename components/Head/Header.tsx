@@ -24,7 +24,7 @@ const Header = () => {
       <header className={`${styles.pageHeader} pageHeader`}>
         <div className={`${styles.container} container d_flex`}>
           <div className='logo'>
-            <Image src={logo} alt="" width="139px" height="70px"  />
+            <Image src={logo} priority alt="" width="139px" height="70px"  />
           </div>
 
           <div className='navlink'>

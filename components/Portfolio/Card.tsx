@@ -20,7 +20,7 @@ const Card = (props: IPortfolioCardProps) => {
     } else {
       document.body.classList.remove("active-modal")
     }
-  }, []);
+  }, [modal]);
   return (
     <>
       <div className='box btn_shadow '>

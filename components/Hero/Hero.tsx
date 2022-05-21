@@ -66,7 +66,7 @@ const Hero = () => {
           </div>
           <div className={styles.right}>
             <div className={'right_img'}>
-              <Image src={hero} alt="" width="510" height="700"  />
+              <Image priority src={hero} alt="" width="510" height="700"  />
             </div>
           </div>
         </div>
