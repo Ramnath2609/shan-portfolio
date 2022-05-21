@@ -114,6 +114,7 @@ p {
   box-shadow: -1px 11px 24px -11px rgba(0, 0, 0, 0.75);
   transition: 0.5s;
 }
+
 textarea,
 input {
   width: 100%;

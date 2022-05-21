@@ -36,7 +36,7 @@
 .open {
   display: none;
 }
-.pageHeader.active {
+/* .pageHeader.active {
   height: 12vh;
   position: fixed;
   top: 0;
@@ -45,7 +45,7 @@
   background-color: #ecf0f3;
   box-shadow: -1px 11px 24px -11px rgba(0, 0, 0, 0.75);
   transition: 0.5s;
-}
+} */
 @media (max-width: 768px) {
   .pageHeader ul {
     padding-top: 30px;
