@@ -4,10 +4,18 @@ import hero from "../pic/hero.png"
 import skill1 from "../pic/skill1.png"
 import skill2 from "../pic/skill2.png"
 import skill3 from "../pic/skill3.png"
-import { Typewriter } from "react-simple-typewriter"
+import { useTypewriter, Cursor } from "react-simple-typewriter"
 import Image from "next/image"
 
 const Hero = () => {
+  const words = React.useMemo(() => ([" Professional Coder.", " Data Scientist."]), [])
+  const { text } = useTypewriter({
+    words,
+    loop: 0,
+    typeSpeed: 70,
+    deleteSpeed: 50,
+    delaySpeed: 1000
+  })
   return (
     <>
       <section className={styles.hero} id='home'>
@@ -20,7 +28,8 @@ const Hero = () => {
             <h2>
               a
               <span>
-                <Typewriter words={[" Professional Coder.", " Data Scientist."]} loop cursor cursorStyle='|' typeSpeed={70} deleteSpeed={50} delaySpeed={1000} />
+                  {text}
+                  <Cursor cursorStyle="_" />
               </span>
             </h2>
 

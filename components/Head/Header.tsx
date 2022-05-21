@@ -21,7 +21,7 @@ const Header = () => {
 
   return (
     <>
-      <header className={`${styles.pageHeader} pageHeader active`}>
+      <header className={`${styles.pageHeader} pageHeader`}>
         <div className={`${styles.container} container d_flex`}>
           <div className='logo'>
             <Image src={logo} alt="" width="139px" height="70px"  />
