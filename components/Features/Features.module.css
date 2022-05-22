@@ -21,3 +21,9 @@
   color: white;
   opacity: 1;
 }
+
+@media (max-width: 600px) {
+  .features .box {
+    text-align: center;
+  }
+}

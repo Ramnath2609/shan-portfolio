@@ -8,7 +8,7 @@
   padding: 30px;
 }
 .Contact .details h1 {
-  margin: 20px 0 20px 0;
+  margin: 20px 0;
   font-size: 35px;
 }
 .Contact .details p {
@@ -48,5 +48,34 @@
   .Contact .right {
     width: 100%;
     margin-top: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .Contact .d_flex {
+    flex-direction: column;
+  }
+  .Contact .left,
+  .Contact .content {
+    flex-wrap: wrap;
+  }
+  .Contact .details h1 {
+    margin: 20px 0;
+    font-size: 26px;
+    text-align: center;
+  }
+  .Contact .details p {
+    font-size: 14px;
+    text-align: center;
+  }
+  .Contact .f_flex {
+    justify-content: center;
+  }
+  .Contact input {
+    padding: 12px;
+    margin-bottom: 8px;
+  }
+  .Contact .right {
+    padding: 24px;
   }
 }

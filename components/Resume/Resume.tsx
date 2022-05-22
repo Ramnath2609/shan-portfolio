@@ -13,7 +13,7 @@ const Resume = () => {
             <h1>My Resume</h1>
           </div>
 
-          <div className={`${styles['content-section']} mtop d_flex`}>
+          <div className={`${styles['content-section']} mtop ${styles.d_flex} d_flex`}>
             <div className={`${styles.left} left`}>
               <div className={`${styles.heading} heading`}>
                 <h4>2007-2010</h4>

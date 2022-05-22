@@ -42,7 +42,7 @@ const Contact = () => {
             <h1>Contact With Me</h1>
           </div>
 
-          <div className='content d_flex'>
+          <div className={`${styles.content} content d_flex`}>
             <div className={styles.left}>
               <div className={`${styles.box} box box_shodow`}>
                 <div className='img'>
@@ -54,8 +54,8 @@ const Contact = () => {
                   <p>I am available for freelance work. Connect with me via and call in to my account.</p> <br />
                   <p>Phone: +01234567890</p>
                   <p>Email: admin@example.com</p> <br />
-                  <span>FIND WITH ME</span>
-                  <div className={`${styles.button} f_flex`}>
+                  <p>FIND WITH ME</p>
+                  <div className={`${styles.button} ${styles.f_flex} f_flex`}>
                     <button className='btn_shadow'>
                       <i className='fab fa-facebook-f'></i>
                     </button>
