@@ -1,12 +1,12 @@
 import React from "react"
-import styles from '../Portfolio/Portfolio.module.css';
+import styles from './Blog.module.css';
 import Card from "./Card"
 import BlogApi from "./BlogApi"
 
 const Blog = () => {
   return (
     <>
-      <section className={`${styles.Portfolio} Blog`} id='blog'>
+      <section className={`${styles.Blog}`} id='blog'>
         <div className='container top'>
           <div className='heading text-center'>
             <h4>VISIT MY BLOG AND KEEP YOUR FEEDBACK</h4>

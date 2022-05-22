@@ -132,6 +132,10 @@ footer p {
   margin-top: 30px;
 }
 
+/* .active-modal {
+  overflow-y: hidden;
+} */
+
 /*----------Footer---------*/
 @media (max-width: 768px) {
   .grid {

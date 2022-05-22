@@ -109,7 +109,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .Resume .d_flex {
     flex-direction: column;
   }
@@ -146,6 +146,12 @@
     height: 5px;
     width: 30px;
     background: #d9dee2;
+  }
+  .Resume .heading h1 {
+    font-size: 32px;
+  }
+  .Resume .left::after {
+    top: 11%;
   }
 }
 

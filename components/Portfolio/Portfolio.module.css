@@ -140,7 +140,7 @@ body.active-modal {
   }
 
   .modal .modal-img {
-    margin: 50px 0 50px 0;
+    margin: 50px 0;
   }
   .modal-content {
     flex-direction: column;
@@ -148,5 +148,54 @@ body.active-modal {
   .modal .right,
   .modal .left {
     padding: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .modal,
+  .overlay {
+    overflow: scroll;
+  }
+
+  .modal .modal-img {
+    margin: 20px 0;
+  }
+  .modal-img img {
+    width: 100px;
+  }
+  .modal-content {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .modal-text {
+    padding: 0;
+  }
+  .modal-text h1 {
+    margin: 8px 0;
+    font-size: 20px;
+    text-align: center;
+  }
+  .modal-text p {
+    font-size: 14px;
+    margin-bottom: 14px;
+  }
+
+  .modal .mtop {
+    margin-top: 20px;
+  }
+  .modal button {
+    padding: 12px;
+    font-size: 12px;
+  }
+  .modal .right,
+  .modal .left {
+    padding: 0;
+  }
+  .Portfolio h2 {
+    font-size: 18px;
+    padding-bottom: 12px;
+  }
+  .Portfolio .title {
+    text-align: center;
   }
 }

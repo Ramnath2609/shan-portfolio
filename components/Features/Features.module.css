@@ -2,7 +2,7 @@
   padding: 50px;
 }
 .features .box h2 {
-  margin: 20px 0 20px 0;
+  margin: 20px 0;
 }
 .features .box p {
   word-spacing: 2px;
@@ -25,5 +25,9 @@
 @media (max-width: 600px) {
   .features .box {
     text-align: center;
+    padding: 14px;
+  }
+  .features .box h2 {
+    margin: 16px 0;
   }
 }
