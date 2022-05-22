@@ -16,9 +16,10 @@ interface ICardProps {
 const Card = (props: ICardProps) => {
   const [modal, setModal] = useState(false)
 
-  const toggleModal = () => {
+  const toggleModal = React.useCallback(() => {
     setModal(!modal)
-  }
+  }, [modal])
+
   useEffect(() => {
     if (modal) {
       document.body.classList.add("active-modal")
@@ -29,15 +30,12 @@ const Card = (props: ICardProps) => {
 
   return (
     <>
-      <div className='box btn_shadow '>
+      <div className='box btn_shadow'>
         <div className='img'>
           <Image src={props.image} alt="" width="300" height="300" onClick={toggleModal}  />
         </div>
         <div className='category d_flex'>
           <span onClick={toggleModal}>{props.date}</span>
-          {/*<label>
-            <i className='far fa-heart'></i> {props.date}
-          </label>*/}
         </div>
         <div className='title'>
           <h2 onClick={toggleModal}>{props.title_one}</h2>
@@ -50,12 +48,12 @@ const Card = (props: ICardProps) => {
       {/* Popup box */}
       {modal && (
         <div className={`${styles.modal} ${styles['modal-blog']}`}>
-          <div onClick={toggleModal} className='overlay'></div>
+          <div onClick={toggleModal} className={styles.overlay}></div>
           <div className={`${styles['modal-content']}`}>
             <div className='modal-img left'>
               <Image src={props.image} alt="" width="300" height="300" />
             </div>
-            <div className={`${styles['modal-text']} right`}>
+            <div className={`${styles['modal-text']} ${styles.right}`}>
               <span>{props.date}</span>
               <h1>{props.title_one}</h1>
               <p>{props.desc_one}</p>
@@ -66,7 +64,7 @@ const Card = (props: ICardProps) => {
               <h1>{props.title_three}</h1>
               <p>{props.desc_three}</p>
 
-              <button className='close-modal btn_shadow' onClick={toggleModal}>
+              <button className={`${styles['close-modal']} btn_shadow`} onClick={toggleModal}>
                 <i className='fas fa-times'></i>
               </button>
 
@@ -75,13 +73,13 @@ const Card = (props: ICardProps) => {
                 <h1>Leave a Reply</h1>
 
                 <form className='blog_contact d_flex'>
-                  <div className='left'>
+                  <div className={styles.left}>
                     <input type='text' placeholder='Name' />
                     <input type='email' placeholder='Email' />
                     <input type='text' placeholder='Website' />
                     <button className='btn_shadow'>SUBMIT NOW</button>
                   </div>
-                  <div className='right'>
+                  <div className={styles.right}>
                     <textarea cols={30} rows={12} placeholder='Comment'></textarea>
                   </div>
                 </form>
