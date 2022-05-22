@@ -17,18 +17,18 @@ const Testimonial = () => {
     }
   }, [index, data])
 
-  useEffect(() => {
-    let slider = setInterval(() => {
-      setIndex(index + 1)
-    }, 3000)
-    return () => clearInterval(slider)
-  }, [index])
+  // useEffect(() => {
+  //   let slider = setInterval(() => {
+  //     setIndex(index + 1)
+  //   }, 3000)
+  //   return () => clearInterval(slider)
+  // }, [index])
 
   return (
     <>
       <section className={styles.Testimonial} id='clients'>
         <div className='container'>
-          <div className='heading text-center'>
+          <div className={`${styles.heading} heading text-center`}>
             <h4>WHAT CLIENTS SAY</h4>
             <h1>Testimonial</h1>
           </div>
@@ -38,10 +38,10 @@ const Testimonial = () => {
             })}
 
             <div className={styles.slide_button}>
-              <button className={`btn_shadow ${styles.prev_btn}`} onClick={() => setIndex(index - 1)}>
+              <button className={`${styles.btn_shadow} btn_shadow ${styles.prev_btn}`} onClick={() => setIndex(index - 1)}>
                 <i className='fas fa-arrow-left'></i>
               </button>
-              <button className={`btn_shadow ${styles.next_btn}`} onClick={() => setIndex(index + 1)}>
+              <button className={`${styles.btn_shadow} btn_shadow ${styles.next_btn}`} onClick={() => setIndex(index + 1)}>
                 <i className='fas fa-arrow-right'></i>
               </button>
             </div>

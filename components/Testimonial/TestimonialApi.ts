@@ -48,7 +48,7 @@ const TestimonialApi = [
     post: "Android App Design",
     date: "Fiver - Mar 4, 2015 - Aug 30, 2021",
     desc: "No more question for design. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante. Ut tincidunt est ac dolor aliquam sodales phasellus smauris	.",
-  },
+  }
 ]
 
 export default TestimonialApi

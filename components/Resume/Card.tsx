@@ -13,7 +13,7 @@ const Card = (props: IResumeCardProps) => {
     <>
       <div className={`${styles.box} box ${styles['btn_shadow']} btn_shadow`}>
         <div className='title_content d_flex'>
-          <div className='title'>
+          <div className={`${styles.title} title`}>
             <h2>{props.title}</h2>
             <span>{props.year}</span>
           </div>

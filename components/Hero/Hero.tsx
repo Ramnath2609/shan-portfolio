@@ -20,7 +20,7 @@ const Hero = () => {
     <>
       <section className={styles.hero} id='home'>
         <div className={`container ${styles['f_flex']} f_flex top`}>
-          <div className={`${styles.left} left top`}>
+          <div className={`${styles.left} left ${styles.top} top`}>
             <h3>WELCOME TO MY WORLD</h3>
             <h1>
               Hi, I’m <span>Shan</span>
@@ -35,8 +35,8 @@ const Hero = () => {
 
             <p>I use animation as a third dimension by which to simplify experiences and kuiding thro each and every interaction. I’m not adding motion just to spruce things up, but doing it in ways that.</p>
 
-            <div className={`${styles.hero_btn} d_flex`}>
-              <div className='col_1'>
+            <div className={`${styles.hero_btn} ${styles.d_flex} d_flex`}>
+              <div className={styles.col_1}>
                 <h4>FIND WITH ME</h4>
                 <div className='button'>
                   <button className='btn_shadow'>
@@ -50,7 +50,7 @@ const Hero = () => {
                   </button>
                 </div>
               </div>
-              <div className='col_1'>
+              <div className={styles.col_1}>
                 <h4>BEST SKILL ON</h4>
                 <button className='btn_shadow'>
                   <Image src={skill1} alt="" width="20" height="20"  />

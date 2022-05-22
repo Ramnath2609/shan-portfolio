@@ -7,6 +7,8 @@
 }
 .Resume .box {
   padding: 40px;
+  margin-bottom: 40px;
+  position: relative;
 }
 .Resume hr {
   margin: 30px 0 30px 0;
@@ -23,10 +25,7 @@
   font-size: 18px;
   transition: 0.5s;
 }
-.Resume .box {
-  margin-bottom: 40px;
-  position: relative;
-}
+
 .Resume .btn_shadow:hover {
   transform: translate(0);
 }
@@ -64,7 +63,7 @@
   background: #d9dee2;
 }
 .Resume .box::before {
-  content: "";
+  content: ""; transition: 0.5s;
   position: absolute;
   top: 11%;
   left: -10%;
@@ -87,4 +86,66 @@
     top: 14%;
     height: 105vh;
   }
+  .Resume .content-section {
+    margin-top: 12px;
+  }
+  .Resume .box {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .Resume .title h2 {
+    font-size: 18px;
+  }
+  .Resume .title span {
+    font-size: 12px;
+  }
+  .Resume p {
+    font-size: 14px;
+  }
+  .Resume hr {
+    margin: 20px 0;
+    border: 1px solid #e3e9ed;
+    background-color: #e3e9ed;
+  }
 }
+
+@media (max-width: 768px) {
+  .Resume .d_flex {
+    flex-direction: column;
+  }
+  .Resume .left::after {
+    top: 14%;
+    height: 105vh;
+  }
+  .Resume .content-section {
+    margin-top: 12px;
+  }
+  .Resume .box {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .Resume .title h2 {
+    font-size: 18px;
+  }
+  .Resume .title span {
+    font-size: 12px;
+  }
+  .Resume p {
+    font-size: 14px;
+  }
+  .Resume hr {
+    margin: 20px 0;
+    border: 1px solid #e3e9ed;
+    background-color: #e3e9ed;
+  }
+  .Resume .box::after {
+    content: "";
+    position: absolute;
+    top: 13%;
+    left: -8%;
+    height: 5px;
+    width: 30px;
+    background: #d9dee2;
+  }
+}
+

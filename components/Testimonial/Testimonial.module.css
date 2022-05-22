@@ -85,7 +85,7 @@
   .Testimonial .right {
     width: 100%;
     margin: 0;
-    padding: 0 0 0 0px;
+    padding: 0;
   }
   .Testimonial .slide {
     height: 70vh;
@@ -93,5 +93,55 @@
   }
   .Testimonial .quote {
     display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .testimon {
+    flex-direction: column;
+    padding: 14px;
+  }
+  .Testimonial .left {
+    width: 100%;
+    display: flex;
+    margin: 0;
+    margin-top: 8%;
+    padding: 20px;
+  }
+  .Testimonial .left h2 {
+    font-size: 16px;
+  }
+  .Testimonial .details {
+    margin-top: 30px;
+  }
+  .Testimonial .right {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .Testimonial .slide {
+    height: 70vh;
+    max-width: 90%;
+  }
+  .Testimonial .quote {
+    display: none;
+  }
+
+  .Testimonial .content {
+    padding: 28px;
+  }
+  .Testimonial .content h1 {
+    font-weight: 500;
+  }
+  .Testimonial .content h3 {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  .Testimonial .content p {
+    font-size: 14px;
+  }
+  .Testimonial .btn_shadow {
+    padding: 12px 20px;
   }
 }

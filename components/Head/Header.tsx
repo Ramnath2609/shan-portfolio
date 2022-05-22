@@ -28,7 +28,7 @@ const Header = () => {
           </div>
 
           <div className='navlink'>
-            <ul className={mobileView ? "nav-links-mobile" : `${styles.link} f_flex uppercase`} onClick={setMobileViewFalse}>
+            <ul className={mobileView ? `${styles['nav-links-mobile']}`: `${styles.link} f_flex uppercase`} onClick={setMobileViewFalse}>
               <li>
                 <a href='#home'>home</a>
               </li>

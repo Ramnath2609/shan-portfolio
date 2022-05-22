@@ -31,7 +31,7 @@ const Slide = ({ id, image, design, name, offcer, post, date, desc, valueIndex, 
           <div className='img'>
             <Image src={image} alt="" width="150" height="150"  />
           </div>
-          <div className='details mtop'>
+          <div className={`${styles.details} details mtop`}>
             <span className='primary_color'>{design}</span>
             <h2>{name}</h2>
             <label>{offcer}</label>
